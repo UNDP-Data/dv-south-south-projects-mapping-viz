@@ -408,6 +408,44 @@ export function UnivariateMap(props: Props) {
           </g>
         </svg>
       </LegendEl>
+      <div
+        className='bivariate-legend-container'
+        style={{
+          justifyContent: 'flex-end',
+          width: '100%',
+          marginRight: 'var(--spacing-05)',
+          marginBottom: 0,
+        }}
+      >
+        <div
+          className='bivariate-legend-el'
+          style={{ alignItems: 'flex-start', marginBottom: 0, maxWidth: '50%' }}
+        >
+          <div className='flex-div' style={{ alignItems: 'flex-end' }}>
+            <div
+              style={{
+                display: 'flex',
+                pointerEvents: 'auto',
+                padding: 'var(--spacing-01)',
+                paddingRight: 'var(--spacing-05)',
+                backgroundColor: 'rgba(255,255,255,0.4)',
+              }}
+            >
+              <p
+                className='undp-typography italics margin-bottom-00'
+                style={{ fontSize: '0.625rem' }}
+              >
+                The designations employed and the presentation of material on
+                this map do not imply the expression of any opinion whatsoever
+                on the part of the Secretariat of the United Nations or UNDP
+                concerning the legal status of any country, territory, city or
+                area or its authorities, or concerning the delimitation of its
+                frontiers or boundaries.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
       {hoverData ? (
         <Tooltip
           data={hoverData}
